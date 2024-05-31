@@ -29,12 +29,6 @@
                             <h3 class="text-center">Register Page</h3>
                         </div>
                         <div class="card-body">
-                        <?php
-                            if(isset($_SESSION['message'])){
-                                echo "<div class='alert alert-".$_SESSION['message']['type']." alert-dismissible fade show' role='alert'>".$_SESSION['message']['message']." <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>";
-                                unset($_SESSION['message']);
-                            }
-                        ?>
                             <form action="query/query_register.php" method="post">
                                 <div class="mb-3">
                                     <label for="name">Nama Lengkap</label>

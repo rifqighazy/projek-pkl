@@ -1,6 +1,3 @@
-<?php
-include 'query/user.php';
-?>
 <div
     class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
     <h1 class="h2">Users</h1>
@@ -16,22 +13,13 @@ include 'query/user.php';
         <th scope="col">Phone Number</th>
       </tr>
     </thead>
-    <?php foreach($hasil as $row) : ?>
     <tbody>
       <tr>
-        <td><?php echo $no++; ?></td>
-        <td><?php echo $row['username']; ?></td>
-        <td><?php echo $row['full_name']; ?></td>
-        <td><?php echo $row['nomor_telepon']; ?></td>
+        <td>1</td>
+        <td>jinsakai123</td>
+        <td>Jin Sakai</td>
+        <td>081234567890</td>
       </tr>
     </tbody>
-    <?php endforeach; ?>
   </table>
 </div>
-
-<?php
-if(isset($_SESSION['message'])){
-    echo "<div class='alert alert-".$_SESSION['message']['type']." alert-dismissible fade show' role='alert'>".$_SESSION['message']['message']." <button type='button' class='btn-close' data-bs-dismiss='alert' aria-label='Close'></button></div>";
-    unset($_SESSION['message']);
-}
-?>
